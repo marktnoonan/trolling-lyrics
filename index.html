@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen" type="text/css">
+      body {
+background: url("../img/jmblue-orange.png") no-repeat top fixed, linear-gradient(rgba(99, 147, 193, 1), rgba(211, 117, 74, 1));
+background: rgb(99, 147, 193);
+/* Old browsers */
+background: -moz-linear-gradient(top, rgba(99, 147, 193, 1) 0%, rgba(211, 117, 74, 1) 80%, rgba(99, 147, 193, 1) 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(99, 147, 193, 1) 0%, rgba(211, 117, 74, 1) 80%, rgba(99, 147, 193, 1) 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(99, 147, 193, 1) 0%, rgba(211, 117, 74, 1) 80%, rgba(99, 147, 193, 1) 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6393c1', endColorstr='#d3754a', GradientType=0);
+/* IE6-9 */
+background-size: contain;
+      }
+
+      iframe {
+        display: inline-block;
+        width: 800px;
+        height: 100vw;
+        margin-left: 200px;
+      }
+      .left-menu {
+        text-align: center;
+        position: fixed;
+        padding: 2px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+
+        background-color: #fff;
+        margin-left: 0;
+        margin-bottom: 2px;
+        border: 1px solid black;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 2px;
+        opacity: 0.8;
+      }
+
+      li:hover {
+        opacity: 1;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+    </style>
+    <meta charset="utf-8">
+    <title>Trolling For Dreams by John McCutcheon</title>
+  </head>
+  <body>
+
+    <div class="left-menu">
+      <h5>TROLLING FOR DREAMS</h5>
+      <ul>
+        <li id="13" class="track">Y’all Means All </li>
+        <li id="8" class="track">The Dance </li>
+        <li id="1" class="track">Gone</li>
+        <li id="5" class="track">Sharecropper’s Song </li>
+        <li id="0" class="track">Between Good and Gone </li>
+        <li id="9" class="track">The Reason I’m Here </li>
+        <li id="6" class="track">She Is </li>
+        <li id="11" class="track">Three Chords and the Truth </li>
+        <li id="7" class="track">The Bible </li>
+        <li id="3" class="track">New Man Now </li>
+        <li id="12" class="track">Waltz ‘Round the Kitchen </li>
+        <li id="4" class="track">This Is Not a Song </li>
+        <li id="10" class="track">This Ain’t Me </li>
+        <li id="2" class="track">Longing</li>
+      </ul>
+    </div>
+
+
+    <iframe id="iframe" src="https://drive.google.com/file/d/0B47521_c0zHtd1A5VmQyZ3lSREE/preview"></iframe>
+    <br>
+
+
+<script type="text/javascript">
+
+var urlsForPDFs =   [ "https://drive.google.com/file/d/0B47521_c0zHtT1JWY3NKcjVyOEE/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtRUpSM2JTVlNQTUE/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtaVRwT181dVhxeXc/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtSDB3TWZ4ekhLUFE/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtTzUtbEJoT3hZTUU/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtX2JBMkhXbGx5TkU/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtYWRsWmYxS2FwVTQ/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtaXlISlR3VU1sajA/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtR3FINFo1b29ROVE/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtSUp6R0xrS0pIUlk/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtZER0R0dfaGs5STQ/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtZjQxaEVTeEFRYmc/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtdmJRcTRSUmRTc1k/preview",
+                      "https://drive.google.com/file/d/0B47521_c0zHtd1A5VmQyZ3lSREE/preview"
+
+                      ]
+
+var iframe = document.getElementById("iframe");
+
+function newLink() {
+iframe.src = urlsForPDFs[this.id];
+}
+
+function addListeners(){
+  var listItems = document.getElementsByClassName("track");
+  var tracksInAlbum = listItems.length;
+
+  for (var i = 0; i < tracksInAlbum; i++) {
+    listItems[i].addEventListener("click", newLink)
+  }
+
+}
+
+addListeners();
+
+</script>
+
+  </body>
+</html>
